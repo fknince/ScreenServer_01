@@ -24,7 +24,7 @@ def showScreen(screen_id, screen_url, screen_port, safety_code,call_endpoint):
             entry.grid(row=i, column=1)
             entry.config(width=50)
         entry = tk.Entry(container, textvariable=tk.StringVar(value=call_endpoint), state='readonly', font=("Arial", 16))
-        entry.grid(row=i, column=0, columnspan=2)
+        entry.grid(row=i+1, column=0, columnspan=2)
         entry.config(width=70, justify='center')
         # Do any initialization here
         # ...
